@@ -3,17 +3,17 @@ body{
 }
 
 video {
-    width: 40px; /* adjust this value to your desired size */
+    width: 40px; 
     height: 40px;
-    object-fit: contain; /* make the video fit inside the container */
-    display: block; /* display the video as a block element */
+    object-fit: contain; 
+    display: block; 
   }
 
 .backGr{
     z-index: -1;
-    background-size: cover; /* to make the image cover the entire background */
-    background-position: center center; /* to center the image horizontally and vertically */
-    background-repeat: no-repeat; /* to prevent the image from repeating */
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
     position: fixed;
     top: 0;
     left: 0;
@@ -35,9 +35,9 @@ nav {
 .card{
     display: flex;
     
-    max-width: 250px; /* adjust to your desired width */
-    max-height: 250px; /* adjust to your desired height */
-    margin: 0 auto; /* center the image horizontally */
+    max-width: 250px; 
+    max-height: 250px; 
+    margin: 0 auto; 
     background-color: rgba(0, 0, 0, 0);
     
       
@@ -62,3 +62,28 @@ nav {
     color: burlywood;
 }
 
+.item-page{
+    margin-left: 25%;
+    align-items: center;
+    width: 50%;
+    background: darkgray;
+    
+}
+
+.remove-btn{
+
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.remove-btn:hover{
+    background-color: grey;
+}
+.remove-btn :active{
+  
+        box-shadow: 0px 0px 5px rgba(0, 0, 200, 1);
+ 
+}
