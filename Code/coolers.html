@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+</html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +10,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="beerPage.css">
   <link rel="stylesheet" href="style.css">
+
   <title>Booze Bazaar</title>
 </head>
 
@@ -30,7 +33,7 @@
           </div>
         </a>
 
-        <form class="d-flex col-6"  onsubmit="search(event)" role="search">
+        <form class="d-flex col-6" onsubmit="search(event)" role="search">
           <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success col-2" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search">
@@ -72,9 +75,6 @@
               </a>
             </li>
 
-            </a>
-            </li>
-
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -104,124 +104,39 @@
     </nav>
   </header>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
-    <div class="carousel-inner ">
-      <div class="carousel-item active  ">
-        <a href="">
-          <img src="/carouselImages/c1.jpg" class="d-block w-75 mx-auto" alt="...">
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="">
-          <img src="/carouselImages/c2.jpg" class="d-block w-75 mx-auto" alt="...">
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="">
-          <img src="/carouselImages/c3.jpg" class="d-block w-75 mx-auto" alt="...">
-        </a>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
+  <div class="goBack">
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bili bi-arrow-left"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+      </svg>
+      Homepage
+    </a>
 
+    <select class="sort-select">
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name-asc">Name: A to Z</option>
+      <option value="name-desc">Name: Z to A</option>
+      <option value="alc-asc">Alc: Low to High</option>
+      <option value="alc-desc">Alc: High to Low</option>
+      <option value="size-asc">Size: Low to High</option>
+      <option value="size-desc">Size: High to Low</option>
 
-
-  <div class="row row-cols-1 row-cols-md-3 g-2 mt-3">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/beer.jpg " class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Bold, crisp, refreshing brews</p>
-          <a href="beerPage.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none; ">
-            Beer
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/cooler.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
-          <p class="card-text">Fruity, fizzy, and fun mixed drinks</p>
-          <a href="coolers.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
-            Coolers
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/rum.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Sweet, tropical, and spicy libations</p>
-          <a href="rum.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
-            Rum
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col" style="margin-top: 200px;">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/vodka.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Smooth, pure, and versatile spirits</p>
-          <a href="vodka.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
-            Vodka
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col" style="margin-top: 200px;">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/whiskey.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Smooth and smoky sips.</p>
-          <a href="whiskeyP.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 19px; margin-top: 5px; border: none; ">
-            Whiskey
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col" style="margin-top: 200px;">
-      <div class="card" style="width: 18rem;">
-        <img src="/cards/wine.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Rich, complex, and flavorful blends</p>
-          <a href="wine.html" class="btn btn-primary"
-            style="background-color: rgba(0,0,0,0.9); font-size: 20px; border: none;">
-            Wine
-          </a>
-        </div>
-      </div>
-    </div>
+    </select>
 
   </div>
+  <div id="cards-container"></div>
 
-  <script src="search.js"></script>
 
+
+  <script src="cart.js"></script>
+  <script src="addFavs.js"></script>
+  <script src="coolers.js"></script>
   <script src="index.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
