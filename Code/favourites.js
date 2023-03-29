@@ -1,11 +1,11 @@
 const container = document.querySelector('#favorites-container');
 
-let fav = JSON.parse(localStorage.getItem("favoriteItems")) || [];
+let fav = JSON.parse(localStorage.getItem("favoriteItem")) || [];
 
 function removeItem(name) {
   console.log(name);
   fav = fav.filter(item => item.name !== name);
-  localStorage.setItem("favoriteItems", JSON.stringify(fav));
+  localStorage.setItem("favoriteItem", JSON.stringify(fav));
   console.log(fav);
   showItems(fav);
 

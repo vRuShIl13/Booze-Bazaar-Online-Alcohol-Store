@@ -1,7 +1,7 @@
 
 const contain = document.querySelector('#cards-container');
-let favoriteItems = JSON.parse(localStorage.getItem("favoriteItems")) || [];
-let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+let favoriteItems = JSON.parse(localStorage.getItem("favoriteItem")) || [];
+let cartItems = JSON.parse(localStorage.getItem("cartItem")) || [];
 
 fetch('/Code/database.json')
   .then(response => response.json())
@@ -100,7 +100,7 @@ function addToFavorites(item) {
   }
 
   console.log(favoriteItems);
-  localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
+  localStorage.setItem("favoriteItem", JSON.stringify(favoriteItems));
 }
 
 function addToCart(item) {
@@ -117,7 +117,7 @@ function addToCart(item) {
   }
 
   console.log(cartItems);
-  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  localStorage.setItem("cartItem", JSON.stringify(cartItems));
 }
 
 

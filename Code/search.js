@@ -1,13 +1,13 @@
-const contain = document.querySelector('#search-container');
+const cont = document.querySelector('#search-container');
 
 function search(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-  
-    const query = document.querySelector('input[name="query"]').value; // Get the value of the search input
-    
-    // Redirect to the search results page with the query parameter
-    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
-    
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  const query = document.querySelector('input[name="query"]').value; // Get the value of the search input
+
+  // Redirect to the search results page with the query parameter
+  window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+
 }
 
 
@@ -16,85 +16,118 @@ const query = decodeURIComponent(new URLSearchParams(window.location.search).get
 
 
 function searchItems(searchTerm) {
-    fetch('/Code/database.json')
-      .then(response => response.json())
-      .then(data => {
+  fetch('/Code/database.json')
+    .then(response => response.json())
+    .then(data => {
 
-        const matchingItems = [];
+      const matchingItems = [];
 
-        if(searchTerm.toLowerCase() === "beer"){
-          data.beers.forEach(item => {
-            matchingItems.push(item);
-          });
+      if (searchTerm.toLowerCase() === "beer") {
+        data.beers.forEach(item => {
+          matchingItems.push(item);
+        });
 
-        }else if(searchTerm.toLowerCase() === "rum"){
-          data.rum.forEach(item => {
+      } else if (searchTerm.toLowerCase() === "rum") {
+        data.rum.forEach(item => {
+          matchingItems.push(item);
+        });
+      } else if (searchTerm.toLowerCase() === "whiskey") {
+        data.whiskey.forEach(item => {
+          matchingItems.push(item);
+        });
+      } else if (searchTerm.toLowerCase() === "vodka") {
+        data.vodka.forEach(item => {
+          matchingItems.push(item);
+        });
+      } else if (searchTerm.toLowerCase() === "wine") {
+        data.wine.forEach(item => {
+          matchingItems.push(item);
+        });
+      } else if (searchTerm.toLowerCase() === "coolers") {
+        data.coolers.forEach(item => {
+          matchingItems.push(item);
+        });
+      }
+      else {
+
+        data.beers.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
             matchingItems.push(item);
-          });
-        }else if(searchTerm.toLowerCase() === "whiskey"){
-          data.whiskey.forEach(item => {
-            matchingItems.push(item);
-          });
-        }else if(searchTerm.toLowerCase() === "vodka"){
-          data.vodka.forEach(item => {
-            matchingItems.push(item);
-          });
-        }else if(searchTerm.toLowerCase() === "wine"){
-          data.wine.forEach(item => {
-            matchingItems.push(item);
-          });
-        }else if(searchTerm.toLowerCase() === "coolers"){
-          data.coolers.forEach(item => {
-            matchingItems.push(item);
-          });
-        }
-        else{
-        
-          data.beers.forEach(item => {
-            if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-              matchingItems.push(item);
-            }
-          });
-          data.whiskey.forEach(item => {
-              if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-                matchingItems.push(item);
-              }
-            });
-            data.rum.forEach(item => {
-              if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-                matchingItems.push(item);
-              }
-            });
-            data.coolers.forEach(item => {
-              if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-                matchingItems.push(item);
-              }
-            });
-            data.vodka.forEach(item => {
-              if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-                matchingItems.push(item);
-              }
-            });
-            data.wine.forEach(item => {
-              if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
-                matchingItems.push(item);
-              }
-            });
           }
-          renderItems(matchingItems);
-        
-      })
-      .catch(error => console.error(error));
+        });
+        data.whiskey.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
+            matchingItems.push(item);
+          }
+        });
+        data.rum.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
+            matchingItems.push(item);
+          }
+        });
+        data.coolers.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
+            matchingItems.push(item);
+          }
+        });
+        data.vodka.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
+            matchingItems.push(item);
+          }
+        });
+        data.wine.forEach(item => {
+          if (item.name.includes(searchTerm) || item.description.includes(searchTerm)) {
+            matchingItems.push(item);
+          }
+        });
+      }
+      renderItems(matchingItems);
+
+      const sortSelect = document.querySelector('.sort-select');
+      sortSelect.addEventListener('change', (event) => {
+        const sortOption = event.target.value;
+        items = sortItems(items, sortOption);
+        renderItems(items);
+      });
+
+
+    })
+    .catch(error => console.error(error));
+}
+
+
+function sortItems(items, sortOption) {
+  switch (sortOption) {
+    case 'price-asc':
+      return items.sort((a, b) => a.price - b.price);
+    case 'price-desc':
+      return items.sort((a, b) => b.price - a.price);
+    case 'name-asc':
+      return items.sort((a, b) => a.name.localeCompare(b.name));
+    case 'name-desc':
+      return items.sort((a, b) => b.name.localeCompare(a.name));
+    case 'alc-asc':
+      return items.sort((a, b) => a.alc - b.alc);
+    case 'alc-desc':
+      return items.sort((a, b) => b.alc - a.alc);
+    case 'size-asc':
+      return items.sort((a, b) => a.size - b.size);
+    case 'size-desc':
+      return items.sort((a, b) => b.size - a.size);
+    default:
+      return items;
   }
+}
 
-  function renderItems(items) {
-    contain.innerHTML = '';
-    items.forEach(item => {
 
-      const card = document.createElement('div');
-      card.classList.add('card', 'mb-3');
-      card.style.maxWidth = '540px';
-      card.innerHTML = `
+function renderItems(items) {
+  cont.innerHTML = '';
+  items.forEach(item => {
+
+    const card = document.createElement('div');
+    card.classList.add('card', 'mb-3');
+    card.style.maxWidth = '540px';
+    card.innerHTML = `
       <div class="row g-0 mt-2">
         <div class="col-md-4">
           <img src="${item.image}" class="img-fluid rounded-start" alt="...">
@@ -117,16 +150,16 @@ function searchItems(searchTerm) {
       </div>
     `
 
-      contain.appendChild(card);
+    cont.appendChild(card);
 
-      const addToFavoritesBtn = card.querySelector(".add-to-favorites");
-      addToFavoritesBtn.addEventListener("click", () => addToFavorites(item));
+    const addToFavoritesBtn = card.querySelector(".add-to-favorites");
+    addToFavoritesBtn.addEventListener("click", () => addToFavorites(item));
 
-      const addToCartBtn = card.querySelector(".add-to-cart");
-      addToCartBtn.addEventListener("click", () => addToCart(item));
+    const addToCartBtn = card.querySelector(".add-to-cart");
+    addToCartBtn.addEventListener("click", () => addToCart(item));
 
-    });
-  }
+  });
+}
 
-  
+
 searchItems(query);
