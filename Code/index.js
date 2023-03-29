@@ -1,2 +1,2 @@
-let favoriteItems = [];
-let cartItems = [];
+let favoriteItem = [];
+let cartItem = [];

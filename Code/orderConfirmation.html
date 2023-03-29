@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +8,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="beerPage.css">
-  <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="orderConfirmation.css">
   <title>Booze Bazaar</title>
 </head>
 
@@ -75,6 +73,9 @@
               </a>
             </li>
 
+            </a>
+            </li>
+
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -87,7 +88,6 @@
               </a>
               <ul class="dropdown-menu">
 
-                <li><a class="dropdown-item" href="#">Track Order</a></li>
                 <li><a class="dropdown-item" href="#">Order</a></li>
                 <li><a class="dropdown-item" href="#">User Information</a></li>
                 <li><a class="dropdown-item" href="#">Settings</a></li>
@@ -104,45 +104,30 @@
     </nav>
   </header>
 
+  <div class = "con">
+  <h1>Order Confirmation</h1>
+  <p>Thank you for your order! Here are the details:</p>
 
-  <div class="goBack">
-    <a href="index.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bili bi-arrow-left"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-      </svg>
-      Homepage
-    </a>
+  <ul>
+    <li id = "name"><strong>Name:</strong></li>
+    <li id = "address"><strong>Address:</strong> </li>
+    <li id = "card-number"><strong>Card Number:</strong></li>
+    <li id = "expiry-date"><strong>Expiry Date:</strong> </li>
+    <li id = "cvv"><strong>CVV:</strong></li>
+    <li ><strong>Total:</strong> $50.00</li>
+  </ul>
 
-    <select class="sort-select">
-      <option value="price-asc">Price: Low to High</option>
-      <option value="price-desc">Price: High to Low</option>
-      <option value="name-asc">Name: A to Z</option>
-      <option value="name-desc">Name: Z to A</option>
-      <option value="alc-asc">Alc: Low to High</option>
-      <option value="alc-desc">Alc: High to Low</option>
-      <option value="size-asc">Size: Low to High</option>
-      <option value="size-desc">Size: High to Low</option>
-
-    </select>
-  </div>
-  <div id="cards-container"></div>
+  <a href="index.html" class = "goB">Continue Shopping</a>
+</div>
 
 
-
-  <script src="cart.js"></script>
-  <script src="addFavs.js"></script>
-  <script src="whiskey.js"></script>
-  <script src="index.js"></script>
-  <script src="search.js"></script>
-
+    <script src="orderConfirmation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
-    </script>
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+  </script>
 
 
 </body>

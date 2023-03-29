@@ -1,11 +1,11 @@
 const container = document.querySelector('#carts-container');
 
-let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+let cart = JSON.parse(localStorage.getItem("cartItem")) || [];
 let subtotal = 0;
 function removeItem(name) {
   console.log(name);
   cart = cart.filter(item => item.name !== name);
-  localStorage.setItem("cartItems", JSON.stringify(cart));
+  localStorage.setItem("cartItem", JSON.stringify(cart));
   console.log(cart);
   showItems(cart);
 
@@ -78,6 +78,6 @@ showItems(cart);
 
 function updateQuantity(item, quantity) {
   item.howMany = quantity;
-  localStorage.setItem("cartItems", JSON.stringify(cart));
+  localStorage.setItem("cartItem", JSON.stringify(cart));
   showItems(cart);
 }
