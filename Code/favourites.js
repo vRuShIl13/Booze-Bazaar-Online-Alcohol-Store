@@ -28,7 +28,7 @@ function showItems(fav){
           <div class="card-bod">
             <h1 class="beer-name">Name: ${item.name}</h1>
 
-            <p class="beer-price">Price: ${item.price}</p>
+            <p class="beer-price">Price: $${item.price}</p>
             <p class="beer-quantity">Quantity: ${item.quantity}</p>
             <p class="beer-size">Size: ${item.size}</p>
             <p class="alcohol-content">Alc %: ${item.alc}</p>

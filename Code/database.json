@@ -1,588 +1,695 @@
-
 {
-    "beers": [
-      {
-        "name": "Sam Adams Boston Lager ",
-        "price": 10,
-        "size": 355,
-        "alc": 5,
-        "description": "A full-bodied, rich, and complex brew with a slightly sweet finish.",
-        "quantity": 100,
-        "image": "/images/alc_database/samuelAdams.jpeg"
-      },
-      {
-        "name": "Guinness Draught",
-        "price": 12,
-        "size": 440,
-        "alc": 4.2,
-        "description": "A creamy and smooth beer with hints of coffee and chocolate.",
-        "quantity": 100,
-        "image": "/images/alc_database/guinnessDraught.jpg"
-        
-      },
-      {
-        "name": "Heineken",
-        "price": 9,
-        "size": 330,
-        "alc": 5,
-        "description": "A light, crisp, and refreshing beer with a slightly bitter finish.",
-        "quantity": 100,
-        "image": "/images/alc_database/heineken.jpg"
-      },
-      {
-        "name": "Stella Artois",
-        "price": 11,
-        "size": 330,
-        "alc": 5,
-        "description": "A classic Belgian pilsner with a floral aroma and a clean, crisp taste.",
-        "quantity": 100,
-        "image": "/images/alc_database/stellaArtois.jpg"
-      },
-      {
-        "name": "Corona Extra",
-        "price": 8,
-        "size": 355,
-        "alc": 4.5,
-        "description": "A light and refreshing Mexican lager with a subtle hop aroma.",
-        "quantity": 100,
-        "image": "/images/alc_database/coronaExtra.jpg"
-      },
-      {
-        "name": "Dos Equis Lager",
-        "price": 9,
-        "size": 355,
-        "alc": 4.4,
-        "description": "A crisp and refreshing Mexican lager with a mild malt sweetness.",
-        "quantity": 100,
-        "image": "/images/alc_database/dosEquisLager.jpg"
-      },
-      {
-        "name": "Blue Moon Belgian White",
-        "price": 12,
-        "size": 355,
-        "alc": 5.4,
-        "description": "A Belgian-style wheat beer with notes of orange peel and coriander.",
-        "quantity": 100,
-        "image": "/images/alc_database/blueMoonBelgianWhite.jpg"
-      },
-      {
-        "name": "Newcastle Brown Ale",
-        "price": 11,
-        "size": 330,
-        "alc": 4.7,
-        "description": "A smooth and malty English brown ale with a caramel finish.",
-        "quantity": 100,
-        "image": "/images/alc_database/newcastleBrownAle.jpg"
-      },
-      {
-        "name": "Chimay Blue",
-        "price": 15,
-        "size": 330,
-        "alc": 9,
-        "description": "A rich and complex Belgian Trappist ale with notes of dark fruit and spice.",
-        "quantity": 100,
-        "image": "/images/alc_database/chimayBleue.jpg"
-      },
-      {
-        "name": "Sierra Nevada Pale Ale",
-        "price": 10,
-        "size": 355,
-        "alc": 5.6,
-        "description": "A hoppy and aromatic American pale ale with a crisp finish.",
-        "quantity": 100,
-        "image": "/images/alc_database/sierraNevadaPaleAle.jpg"
-      },
-      {
-        "name": "Pabst Blue Ribbon",
-        "price": 6,
-        "size": 355,
-        "alc": 4.7,
-        "description": "A light and refreshing American lager with a smooth finish.",
-        "quantity": 100,
-        "image": "/images/alc_database/pabstBlueRibbon.jpg"
-      },
-      {
-        "name": "Moosehead Lager",
-        "price": 9,
-        "size": 355,
-        "alc": 5,
-        "description": "A crisp and clean Canadian lager with a mild malt sweetness.",
-        "quantity": 100,
-        "image": "/images/alc_database/mooseheadLager.jpeg"
-      },
-      {
-        "name": "Mill Street Organic Lager",
-        "price": 11,
-        "size": 355,
-        "alc": 4.2,
-        "description": "A light and refreshing Canadian lager made with organic ingredients.",
-        "quantity": 100,
-        "image": "/images/alc_database/millStreetOrganicLager.jpg"
-      }
-
-    ],
-
-    "whiskey":[
-        {
-          "name": "Jack Daniel's Old No. 7 Tennessee Whiskey",
-          "price": "$25",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "Smooth and sweet flavor profile, perfect for sipping on its own or in a cocktail.",
-          "quantity": 100,
-          "image": "/images/alc_database/jackDaniel'sOld.jpg"
-        },
-        {
-          "name": "Jameson Irish Whiskey",
-          "price": "$30",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "An iconic Irish whiskey, featuring notes of honey, vanilla, and oak.",
-          "quantity": 100,
-          "image": "/images/alc_database/jamesonIrishWishkey.jpg"
-        },
-        {
-          "name": "Bulleit Bourbon",
-          "price": "$35",
-          "size": "750 ml",
-          "alc": "45",
-          "description": "A high-rye bourbon, featuring notes of vanilla, oak, and dried fruit.",
-          "quantity": 100,
-          "image": "/images/alc_database/bulleitBourbon.jpg"
-        },
-        {
-          "name": "Woodford Reserve Kentucky Straight Bourbon Whiskey",
-          "price": "$45",
-          "size": "750 ml",
-          "alc": "43.2",
-          "description": "A premium bourbon with a rich and complex flavor.",
-          "quantity": 100,
-          "image": "/images/alc_database/woodfordReserve.jpg"
-        },
-        {
-          "name": "Glenlivet 12 Year Single Malt Scotch Whisky",
-          "price": "$50",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A smooth Scotch whisky with a fruity profile, featuring notes of apple, and vanilla.",
-          "quantity": 100,
-          "image": "/images/alc_database/glenlivet12.jpg"
-        },
-        {
-          "name": "Maker's Mark Kentucky Straight Bourbon Whisky",
-          "price": "$35",
-          "size": "750 ml",
-          "alc": "45",
-          "description": "An approachable bourbon with a sweet and spicy flavor profile, featuring notes oak.",
-          "quantity": 100,
-          "image": "/images/alc_database/makersMarkKentucky.jpg"
-        },
-        {
-          "name": "Canadian Club Classic 12 Year Old Whisky",
-          "price": "$40",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A premium Canadian whisky with a smooth and mellow flavor",
-          "quantity": 100,
-          "image": "/images/alc_database/canadianClubClassic.jpg"
-        },
-        {
-          "name": "The Macallan 12 Year Old Double Cask Single Malt Scotch Whisky",
-          "price": "$65",
-          "size": "750 ml",
-          "alc": "43",
-          "description": "A luxurious and complex Scotch whisky with a rich and fruity flavor profile.",
-          "quantity": 100,
-          "image": "/images/alc_database/theMallacan12.jpg"
-        },
-        {
-          "name": "Wild Turkey 101 Bourbon",
-          "price": "$30",
-          "size": "750 ml",
-          "alc": "50.5",
-          "description": "A high-proof bourbon, featuring notes of vanilla, caramel, and black pepper.",
-          "quantity": 100,
-          "image": "/images/alc_database/wildTurkey.jpg"
-        },
-        {
-          "name": "Crown Royal Deluxe Canadian Whisky",
-          "price": "$35",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A smooth and versatile Canadian whisky, featuring notes of vanilla, oak, and fruit.",
-          "quantity": 100,
-          "image": "/images/alc_database/crownRoyalDeluxe.jpg"
-        }
-    ],
-    "wine":[
-        {
-          "name": "Cabernet Sauvignon",
-          "price": 25.99,
-          "size": "750 ml",
-          "alc": 14.5,
-          "description": "A full-bodied red wine with rich flavors of blackcurrant, dark chocolate, and oak.",
-          "quantity": 100
-        },
-        {
-          "name": "Chardonnay",
-          "price": 19.99,
-          "size": "750 ml",
-          "alc": 13.5,
-          "description": "A buttery and smooth white wine with flavors of tropical fruit, vanilla, and oak.",
-          "quantity": 100
-        },
-        {
-          "name": "Pinot Noir",
-          "price": 29.99,
-          "size": "750 ml",
-          "alc": 13.5,
-          "description": "A light and fruity red wine with flavors of raspberry, cherry, and spice.",
-          "quantity": 100
-        },
-        {
-          "name": "Merlot",
-          "price": 21.99,
-          "size": "750 ml",
-          "alc": 13.5,
-          "description": "A medium-bodied red wine with flavors of black cherry, plum, and chocolate.",
-          "quantity": 100
-        },
-        {
-          "name": "Sauvignon Blanc",
-          "price": 17.99,
-          "size": "750 ml",
-          "alc": 13,
-          "description": "A crisp and refreshing white wine with flavors of citrus, green apple, and grass.",
-          "quantity": 100
-        },
-        {
-          "name": "Syrah",
-          "price": 24.99,
-          "size": "750 ml",
-          "alc": 14,
-          "description": "A full-bodied red wine with flavors of blackberry, pepper, and smoke.",
-          "quantity": 100
-        },
-        {
-          "name": "Zinfandel",
-          "price": 27.99,
-          "size": "750 ml",
-          "alc": 15,
-          "description": "A bold and spicy red wine with flavors of raspberry, blackberry, and cinnamon.",
-          "quantity": 100
-        },
-        {
-          "name": "Malbec",
-          "price": 23.99,
-          "size": "750 ml",
-          "alc": 13.5,
-          "description": "A rich and full-bodied red wine with flavors of blackberry, plum, and vanilla.",
-          "quantity": 100
-        },
-        {
-          "name": "Riesling",
-          "price": 18.99,
-          "size": "750 ml",
-          "alc": 12,
-          "description": "A sweet and aromatic white wine with flavors of peach, apricot, and honey.",
-          "quantity": 100
-        },
-        {
-          "name": "Rosé",
-          "price": 16.99,
-          "size": "750 ml",
-          "alc": 12.5,
-          "description": "A light and refreshing pink wine with flavors of strawberry, watermelon, and citrus.",
-          "quantity": 100
-        },
-        {
-          "name": "Grenache",
-          "price": 22.99,
-          "size": "750 ml",
-          "alc": 14,
-          "description": "A fruity and spicy red wine with flavors of raspberry, black cherry, and black pepper.",
-          "quantity": 100
-        },
-        {
-          "name": "Chianti",
-          "price": 26.99,
-          "size": "750 ml",
-          "alc": 13.5,
-          "description": "A dry and medium-bodied red wine with flavors of cherry.",
-          "quantity": 100
-        }
-    ],
-    "vodka":[
-        {
-          "name": "Absolut Vodka",
-          "price": 25.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Swedish vodka distilled from winter wheat and known for its smooth and clean taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Grey Goose Vodka",
-          "price": 39.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A French vodka made from wheat and spring water, known for its creamy and smooth finish.",
-          "quantity": 100
-        },
-        {
-          "name": "Belvedere Vodka",
-          "price": 32.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Polish vodka made from Dankowskie Gold Rye and pure water from its own wells, known for its smooth and subtle taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Ketel One Vodka",
-          "price": 28.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Dutch vodka made from 100 wheat and distilled in copper pot stills, known for its crisp and lively taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Tito's Handmade Vodka",
-          "price": 23.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "An American vodka made from corn and distilled six times, known for its smooth and clean taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Smirnoff Vodka",
-          "price": 19.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Russian vodka made from corn and triple distilled, known for its classic and versatile taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Ciroc Vodka",
-          "price": 34.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A French vodka made from grapes and distilled five times, known for its crisp and clean taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Chopin Vodka",
-          "price": 39.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Polish vodka made from potatoes and distilled four times, known for its creamy and delicate taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Skyy Vodka",
-          "price": 22.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "An American vodka made from wheat and distilled four times, known for its smooth and mellow taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Finlandia Vodka",
-          "price": 24.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Finnish vodka made from six-row barley and glacial spring water, known for its crisp and clean taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Stolichnaya Vodka",
-          "price": 21.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description": "A Russian vodka made from wheat and rye and filtered through quartz, known for its smooth and rich taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Absolut Citron Vodka",
-          "price": 25.99,
-          "size": "750 ml",
-          "alc": 40,
-          "description":" Swedish vodka citron flavoured known for its smooth and clean taste.",
-          "quantity": 100
-        }      
-    ],
-    "rum":[
-        {
-          "name": "Bacardi Superior White Rum",
-          "price": "$20",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A light-bodied and smooth Puerto Rican rum with a crisp, clean taste and subtle notes of vanilla and almond.",
-          "quantity": 100
-        },
-        {
-          "name": "Captain Morgan Original Spiced Rum",
-          "price": "$25",
-          "size": "750 ml",
-          "alc": "35",
-          "description": "A blend of Caribbean rums with a warm and spicy flavor profile featuring notes of cinnamon, vanilla, and nutmeg.",
-          "quantity": 100
-        },
-        {
-          "name": "Malibu Caribbean Rum",
-          "price": "$20",
-          "size": "750 ml",
-          "alc": "21",
-          "description": "A sweet and smooth rum made with Caribbean coconut flavor and natural flavors, perfect for tropical cocktails.",
-          "quantity": 100
-        },
-        {
-          "name": "Appleton Estate Reserve Blend Rum",
-          "price": "$35",
-          "size": "750 ml",
-          "alc": "43",
-          "description": "A premium Jamaican rum with a complex and full-bodied flavor profile featuring notes of spice, honey, and oak.",
-          "quantity": 100
-        },
-        {
-          "name": "Mount Gay Eclipse Rum",
-          "price": "$22",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A smooth and mellow Barbados rum with a balanced and subtle flavor profile featuring notes of caramel and vanilla.",
-          "quantity": 100
-        },
-        {
-          "name": "Havana Club Añejo 7 Años Rum",
-          "price": "$45",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A premium Cuban rum aged for 7 years with a rich and complex flavor profile featuring notes of tropical fruit, vanilla, and spice.",
-          "quantity": 100
-        },
-        {
-          "name": "Myers's Original Dark Rum",
-          "price": "$28",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A rich and full-bodied Jamaican rum with a bold and intense flavor profile featuring notes of molasses and caramel.",
-          "quantity": 100
-        },
-        {
-          "name": "Brugal 1888 Rum",
-          "price": "$50",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A premium Dominican rum aged for up to 14 years with a smooth and elegant flavor profile featuring notes of toffee, vanilla, and spice.",
-          "quantity": 100
-        },
-        {
-          "name": "Ron Zacapa Centenario 23 Rum",
-          "price": "$75",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A luxury Guatemalan rum aged for up to 23 years with a complex and rich flavor profile featuring notes of chocolate, honey, and caramel.",
-          "quantity": 100
-        },
-        {
-          "name": "Don Q Gran Añejo Rum",
-          "price": "$60",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A premium Puerto Rican rum aged for up to 12 years with a smooth and flavorful profile featuring notes of vanilla, honey, and oak.",
-          "quantity": 100
-        },
-        {
-          "name": "Plantation XO 20th Anniversary Rum",
-          "price": "$50",
-          "size": "750 ml",
-          "alc": "40",
-          "description": "A premium Caribbean rum aged for up to 20 years with a complex and elegant",
-          "quantity": 100
-        }
-    ],
-
-    "coolers": [
-        {
-          "name": "Mike's Hard Lemonade",
-          "price": 10.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A refreshing and sweet lemonade-flavored malt beverage that is perfect for summer days.",
-          "quantity": 100
-        },
-        {
-          "name": "Smirnoff Ice",
-          "price": 12.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A citrus-flavored malt beverage that has a sweet and tangy taste with a refreshing finish.",
-          "quantity": 100
-        },
-        {
-          "name": "Palm Bay Grapefruit",
-          "price": 11.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A pink grapefruit-flavored vodka cooler with a refreshing and slightly bitter taste.",
-          "quantity": 100
-        },
-        {
-          "name": "Twisted Tea",
-          "price": 9.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A blend of tea and lemonade with a sweet and refreshing taste that is perfect for outdoor events.",
-          "quantity": 100
-        },
-        {
-          "name": "Bacardi Breezer Watermelon",
-          "price": 10.99,
-          "size": "4 pack, 275 ml",
-          "alc": "5",
-          "description": "A refreshing watermelon-flavored rum cooler that is perfect for hot summer days.",
-          "quantity": 100
-        },
-        {
-          "name": "Seagram's Escapes Strawberry Daiquiri",
-          "price": 8.99,
-          "size": "4 pack, 355 ml",
-          "alc": "3.2",
-          "description": "A sweet and fruity strawberry-flavored malt beverage that is perfect for sipping on the beach.",
-          "quantity": 100
-        },
-        {
-          "name": "Palm Bay Mojito",
-          "price": 11.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A refreshing and minty rum cooler that is perfect for sipping on a warm day.",
-          "quantity": 100
-        },
-        {
-          "name": "Mike's Hard Peach Lemonade",
-          "price": 10.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A sweet and tangy peach and lemonade-flavored malt beverage that is perfect for picnics and barbecues.",
-          "quantity": 100
-        },
-        {
-          "name": "Twisted Tea Raspberry",
-          "price": 9.99,
-          "size": "6 pack, 355 ml",
-          "alc": "5",
-          "description": "A sweet and fruity raspberry-flavored blend of tea and lemonade that is perfect for a summer day.",
-          "quantity": 100
-        },
-        {
-          "name": "Bacardi Breezer Orange",
-          "price": 10.99,
-          "size": "4 pack, 275 ml",
-          "alc": "5",
-          "description": "A sweet and tangy orange-flavored rum cooler that is perfect for a day at the beach.",
-          "quantity":100
-        }
-    ]
-      
+  "beers": [
+    {
+      "name": "Sam Adams Boston Lager ",
+      "price": 10,
+      "size": 355,
+      "alc": 5,
+      "description": "A full-bodied, rich, and complex brew with a slightly sweet finish.",
+      "quantity": 100,
+      "image": "/images/alc_database/samuelAdams.jpeg",
+      "howMany": 1
+    },
+    {
+      "name": "Guinness Draught",
+      "price": 12,
+      "size": 440,
+      "alc": 4.2,
+      "description": "A creamy and smooth beer with hints of coffee and chocolate.",
+      "quantity": 100,
+      "image": "/images/alc_database/guinnessDraught.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Heineken",
+      "price": 9,
+      "size": 330,
+      "alc": 5,
+      "description": "A light, crisp, and refreshing beer with a slightly bitter finish.",
+      "quantity": 100,
+      "image": "/images/alc_database/heineken.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Stella Artois",
+      "price": 11,
+      "size": 330,
+      "alc": 5,
+      "description": "A classic Belgian pilsner with a floral aroma and a clean, crisp taste.",
+      "quantity": 100,
+      "image": "/images/alc_database/stellaArtois.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Corona Extra",
+      "price": 8,
+      "size": 355,
+      "alc": 4.5,
+      "description": "A light and refreshing Mexican lager with a subtle hop aroma.",
+      "quantity": 100,
+      "image": "/images/alc_database/coronaExtra.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Dos Equis Lager",
+      "price": 9,
+      "size": 355,
+      "alc": 4.4,
+      "description": "A crisp and refreshing Mexican lager with a mild malt sweetness.",
+      "quantity": 100,
+      "image": "/images/alc_database/dosEquisLager.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Blue Moon Belgian White",
+      "price": 12,
+      "size": 355,
+      "alc": 5.4,
+      "description": "A Belgian-style wheat beer with notes of orange peel and coriander.",
+      "quantity": 100,
+      "image": "/images/alc_database/blueMoonBelgianWhite.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Newcastle Brown Ale",
+      "price": 11,
+      "size": 330,
+      "alc": 4.7,
+      "description": "A smooth and malty English brown ale with a caramel finish.",
+      "quantity": 100,
+      "image": "/images/alc_database/newcastleBrownAle.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Chimay Blue",
+      "price": 15,
+      "size": 330,
+      "alc": 9,
+      "description": "A rich and complex Belgian Trappist ale with notes of dark fruit and spice.",
+      "quantity": 100,
+      "image": "/images/alc_database/chimayBleue.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Sierra Nevada Pale Ale",
+      "price": 10,
+      "size": 355,
+      "alc": 5.6,
+      "description": "A hoppy and aromatic American pale ale with a crisp finish.",
+      "quantity": 100,
+      "image": "/images/alc_database/sierraNevadaPaleAle.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Pabst Blue Ribbon",
+      "price": 6,
+      "size": 355,
+      "alc": 4.7,
+      "description": "A light and refreshing American lager with a smooth finish.",
+      "quantity": 100,
+      "image": "/images/alc_database/pabstBlueRibbon.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Moosehead Lager",
+      "price": 9,
+      "size": 355,
+      "alc": 5,
+      "description": "A crisp and clean Canadian lager with a mild malt sweetness.",
+      "quantity": 100,
+      "image": "/images/alc_database/mooseheadLager.jpeg",
+      "howMany": 1
+    },
+    {
+      "name": "Mill Street Organic Lager",
+      "price": 11,
+      "size": 355,
+      "alc": 4.2,
+      "description": "A light and refreshing Canadian lager made with organic ingredients.",
+      "quantity": 100,
+      "image": "/images/alc_database/millStreetOrganicLager.jpg",
+      "howMany": 1
+    }
+  ],
+  "whiskey": [
+    {
+      "name": "Jack Daniel's Tennessee",
+      "price": 25,
+      "size": 950,
+      "alc": 40,
+      "description": "Smooth and sweet flavor profile, perfect for sipping on its own or in a cocktail.",
+      "quantity": 100,
+      "image": "/images/alc_database/jackDaniel'sOld.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Jameson Irish Whiskey",
+      "price": 30,
+      "size": 850,
+      "alc": 40,
+      "description": "An iconic Irish whiskey, featuring notes of honey, vanilla, and oak.",
+      "quantity": 100,
+      "image": "/images/alc_database/jamesonIrishWishkey.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Bulleit Bourbon",
+      "price": 35,
+      "size": 750,
+      "alc": 45,
+      "description": "A high-rye bourbon, featuring notes of vanilla, oak, and dried fruit.",
+      "quantity": 100,
+      "image": "/images/alc_database/bulleitBourbon.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Woodford Reserve Kentucky Straight Bourbon Whiskey",
+      "price": 45,
+      "size": 650,
+      "alc": 43,
+      "description": "A premium bourbon with a rich and complex flavor.",
+      "quantity": 100,
+      "image": "/images/alc_database/woodfordReserve.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Glenlivet 12 Year Single Malt Scotch Whisky",
+      "price": 50,
+      "size": 650,
+      "alc": 40,
+      "description": "A smooth Scotch whisky with a fruity profile, featuring notes of apple, and vanilla.",
+      "quantity": 100,
+      "image": "/images/alc_database/glenlivet12.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Maker's Mark Kentucky Straight Bourbon Whisky",
+      "price": 35,
+      "size": 550,
+      "alc": 45,
+      "description": "An approachable bourbon with a sweet and spicy flavor profile, featuring notes oak.",
+      "quantity": 100,
+      "image": "/images/alc_database/makersMarkKentucky.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Canadian Club Classic 12 Year Old Whisky",
+      "price": 40,
+      "size": 750,
+      "alc": 40,
+      "description": "A premium Canadian whisky with a smooth and mellow flavor",
+      "quantity": 100,
+      "image": "/images/alc_database/canadianClubClassic.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "The Macallan 12 Year Old Double Cask Single Malt Scotch Whisky",
+      "price": 65,
+      "size": 910,
+      "alc": 43,
+      "description": "A luxurious and complex Scotch whisky with a rich and fruity flavor profile.",
+      "quantity": 100,
+      "image": "/images/alc_database/theMallacan12.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Wild Turkey 101 Bourbon",
+      "price": 30,
+      "size": 800,
+      "alc": 50,
+      "description": "A high-proof bourbon, featuring notes of vanilla, caramel, and black pepper.",
+      "quantity": 100,
+      "image": "/images/alc_database/wildTurkey.jpg",
+      "howMany": 1
+    },
+    {
+      "name": "Crown Royal Deluxe Canadian Whisky",
+      "price": 35,
+      "size": 750,
+      "alc": 40,
+      "description": "A smooth and versatile Canadian whisky, featuring notes of vanilla, oak, and fruit.",
+      "quantity": 100,
+      "image": "/images/alc_database/crownRoyalDeluxe.jpg",
+      "howMany": 1
+    }
+  ],
+  "wine": [
+    {
+      "name": "Cabernet Sauvignon",
+      "price": 25.99,
+      "size": 1000,
+      "alc": 14.5,
+      "description": "A full-bodied red wine with rich flavors of blackcurrant, dark chocolate, and oak.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/carbenetSauvignon.jpg"
+    },
+    {
+      "name": "Chardonnay",
+      "price": 19.99,
+      "size": 910,
+      "alc": 13.5,
+      "description": "A buttery and smooth white wine with flavors of tropical fruit, vanilla, and oak.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/chardonnay.jpg"
+    },
+    {
+      "name": "Pinot Noir",
+      "price": 29.99,
+      "size": 880,
+      "alc": 13.5,
+      "description": "A light and fruity red wine with flavors of raspberry, cherry, and spice.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/pinotNoir.jpg"
+    },
+    {
+      "name": "Merlot",
+      "price": 21.99,
+      "size": 750,
+      "alc": 13.5,
+      "description": "A medium-bodied red wine with flavors of black cherry, plum, and chocolate.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/merlot.jpg"
+    },
+    {
+      "name": "Sauvignon Blanc",
+      "price": 17.99,
+      "size": 750,
+      "alc": 13,
+      "description": "A crisp and refreshing white wine with flavors of citrus, green apple, and grass.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/sauvignonBlanc.jpg"
+    },
+    {
+      "name": "Syrah",
+      "price": 24.99,
+      "size": 750,
+      "alc": 14,
+      "description": "A full-bodied red wine with flavors of blackberry, pepper, and smoke.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/syrah.jpg"
+    },
+    {
+      "name": "Zinfandel",
+      "price": 27.99,
+      "size": 680,
+      "alc": 15,
+      "description": "A bold and spicy red wine with flavors of raspberry, blackberry, and cinnamon.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/zinfandel.jpg"
+    },
+    {
+      "name": "Malbec",
+      "price": 23.99,
+      "size": 524,
+      "alc": 13.5,
+      "description": "A rich and full-bodied red wine with flavors of blackberry, plum, and vanilla.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/malbec.jpg"
+    },
+    {
+      "name": "Riesling",
+      "price": 18.99,
+      "size": 880,
+      "alc": 12,
+      "description": "A sweet and aromatic white wine with flavors of peach, apricot, and honey.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/riesling.jpg"
+    },
+    {
+      "name": "Rosé",
+      "price": 16.99,
+      "size": 750,
+      "alc": 12.5,
+      "description": "A light and refreshing pink wine with flavors of strawberry, watermelon, and citrus.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/roseWine.jpg"
+    },
+    {
+      "name": "Grenache",
+      "price": 22.99,
+      "size": 1000,
+      "alc": 14,
+      "description": "A fruity and spicy red wine with flavors of raspberry, black cherry, and black pepper.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/grenache.jpg"
+    },
+    {
+      "name": "Chianti",
+      "price": 26.99,
+      "size": 980,
+      "alc": 13.5,
+      "description": "A dry and medium-bodied red wine with flavors of cherry.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/chianti.jpg"
+    }
+  ],
+  "vodka": [
+    {
+      "name": "Absolut Vodka",
+      "price": 25.99,
+      "size": 750,
+      "alc": 35,
+      "description": "A Swedish vodka distilled from winter wheat and known for its smooth and clean taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/absolutVodka.jpg"
+    },
+    {
+      "name": "Grey Goose Vodka",
+      "price": 39.99,
+      "size": 1000,
+      "alc": 30,
+      "description": "A French vodka made from wheat and spring water, known for its creamy and smooth finish.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/greyGooseVodka.jpg"
+    },
+    {
+      "name": "Belvedere Vodka",
+      "price": 32.99,
+      "size": 800,
+      "alc": 41,
+      "description": "A Polish vodka made from Dankowskie Gold Rye and pure water from its own wells, known for its smooth and subtle taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/belvedereVodka.jpg"
+    },
+    {
+      "name": "Ketel One Vodka",
+      "price": 28.99,
+      "size": 750,
+      "alc": 40,
+      "description": "A Dutch vodka made from 100 wheat and distilled in copper pot stills, known for its crisp and lively taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/ketelOneVodka.jpg"
+    },
+    {
+      "name": "Tito's Handmade Vodka",
+      "price": 23.99,
+      "size": 680,
+      "alc": 40,
+      "description": "An American vodka made from corn and distilled six times, known for its smooth and clean taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/titosHandmadeVodka.jpg"
+    },
+    {
+      "name": "Smirnoff Vodka",
+      "price": 19.99,
+      "size": 750,
+      "alc": 40,
+      "description": "A Russian vodka made from corn and triple distilled, known for its classic and versatile taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/smirnoffVodka.jpg"
+    },
+    {
+      "name": "Ciroc Vodka",
+      "price": 34.99,
+      "size": 720,
+      "alc": 45,
+      "description": "A French vodka made from grapes and distilled five times, known for its crisp and clean taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/cirocVodka.jpg"
+    },
+    {
+      "name": "Chopin Vodka",
+      "price": 39.99,
+      "size": 750,
+      "alc": 50,
+      "description": "A Polish vodka made from potatoes and distilled four times, known for its creamy and delicate taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/chopinVodka.jpg"
+    },
+    {
+      "name": "Skyy Vodka",
+      "price": 22.99,
+      "size": 1000,
+      "alc": 30,
+      "description": "An American vodka made from wheat and distilled four times, known for its smooth and mellow taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/skyyVodka.jpg"
+    },
+    {
+      "name": "Finlandia Vodka",
+      "price": 24.99,
+      "size": 750,
+      "alc": 28,
+      "description": "A Finnish vodka made from six-row barley and glacial spring water, known for its crisp and clean taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/finlandiaVodka.jpg"
+    },
+    {
+      "name": "Stolichnaya Vodka",
+      "price": 21.99,
+      "size": 750,
+      "alc": 25,
+      "description": "A Russian vodka made from wheat and rye and filtered through quartz, known for its smooth and rich taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/stolichnayaVodka.jpg"
+    },
+    {
+      "name": "Absolut Citron Vodka",
+      "price": 25.99,
+      "size": 890,
+      "alc": 40,
+      "description": " Swedish vodka citron flavoured known for its smooth and clean taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/absolutCitronVodka.jpg"
+    }
+  ],
+  "rum": [
+    {
+      "name": "Bacardi Superior White Rum",
+      "price": 20,
+      "size": 750,
+      "alc": 40,
+      "description": "A light-bodied and smooth Puerto Rican rum with a crisp.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/bacardiSuperior.jpg"
+    },
+    {
+      "name": "Captain Morgan Original Spiced Rum",
+      "price": 25,
+      "size": 660,
+      "alc": 35,
+      "description": "A blend of Caribbean rums with a warm and spicy flavor profile.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/captainMorgan.jpg"
+    },
+    {
+      "name": "Malibu Caribbean Rum",
+      "price": 20,
+      "size": 500,
+      "alc": 21,
+      "description": "Made with Caribbean coconut flavor, perfect for tropical cocktails.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/malibuCaribbeanRum.jpg"
+    },
+    {
+      "name": "Appleton Estate Reserve Blend Rum",
+      "price": 35,
+      "size": 1000,
+      "alc": 43,
+      "description": "A premium Jamaican rum featuring notes of spice, honey, and oak.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/appletonEstateReserve.jpg"
+    },
+    {
+      "name": "Mount Gay Eclipse Rum",
+      "price": 22,
+      "size": 840,
+      "alc": 40,
+      "description": "A smooth and mellow Barbados rum featuring notes of caramel and vanilla.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/mountGayEclipse.jpg"
+    },
+    {
+      "name": "Havana Club Añejo 7 Años Rum",
+      "price": 45,
+      "size": 490,
+      "alc": 38,
+      "description": "A premium Cuban rum aged for 7 years with a rich and complex flavor.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/havanaClubAnejo.jpg"
+    },
+    {
+      "name": "Myers's Original Dark Rum",
+      "price": 28,
+      "size": 910,
+      "alc": 40,
+      "description": "A rich and full-bodied Jamaican rum featuring notes of molasses and caramel.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/myerssOriginalDarkRum.jpg"
+    },
+    {
+      "name": "Brugal 1888 Rum",
+      "price": 50,
+      "size": 670,
+      "alc": 35,
+      "description": "A premium Dominican rum aged for up to 14 years with a smooth and elegant flavor",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/brugal1888Rum.jpg"
+    },
+    {
+      "name": "Ron Zacapa Centenario 23 Rum",
+      "price": 75,
+      "size": 750,
+      "alc": 30,
+      "description": "A luxury Guatemalan rum aged for up to 23 years featuring notes of chocolate, honey, and caramel.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/ronZacapaCentenario.jpg"
+    },
+    {
+      "name": "Don Q Gran Añejo Rum",
+      "price": 60,
+      "size": 750,
+      "alc": 40,
+      "description": "A premium Puerto Rican rum aged for up to 12 years featuring notes of vanilla, honey, and oak.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/donQGranAnejoRum.jpg"
+    },
+    {
+      "name": "Plantation XO 20th Anniversary Rum",
+      "price": 50,
+      "size": 1000,
+      "alc": 25,
+      "description": "A premium Caribbean rum aged for up to 20 years with a complex and elegant",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/plantationXO.jpg"
+    }
+  ],
+  "coolers": [
+    {
+      "name": "Mike's Hard Lemonade",
+      "price": 10.99,
+      "size": "6 pack, 355",
+      "alc": 5,
+      "description": "A refreshing and sweet lemonade-flavored malt beverage that is perfect for summer days.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/mikesHardLemonade.jpg"
+    },
+    {
+      "name": "Smirnoff Ice",
+      "price": 12.99,
+      "size": "6 pack, 355",
+      "alc": 4,
+      "description": "A citrus-flavored malt beverage that has a sweet and tangy taste with a refreshing finish.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/smirnoffIce.jpg"
+    },
+    {
+      "name": "Palm Bay Grapefruit",
+      "price": 11.99,
+      "size": "6 pack, 355",
+      "alc": 3,
+      "description": "A pink grapefruit-flavored vodka cooler with a refreshing and slightly bitter taste.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/palmBayGrapefruit.jpg"
+    },
+    {
+      "name": "Twisted Tea",
+      "price": 9.99,
+      "size": "6 pack, 355",
+      "alc": 6,
+      "description": "A blend of tea and lemonade with a sweet and refreshing taste that is perfect for outdoor events.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/twistedTea.jpg"
+    },
+    {
+      "name": "Bacardi Breezer Watermelon",
+      "price": 10.99,
+      "size": "4 pack, 275",
+      "alc": 7,
+      "description": "A refreshing watermelon-flavored rum cooler that is perfect for hot summer days.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/bracadiBreezerWatermelon.jpg"
+    },
+    {
+      "name": "Seagram's Escapes Strawberry Daiquiri",
+      "price": 8.99,
+      "size": "4 pack, 355",
+      "alc": 3.2,
+      "description": "A sweet and fruity strawberry-flavored malt beverage that is perfect for sipping on the beach.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/seagramsEscapesStrawberry.jpg"
+    },
+    {
+      "name": "Palm Bay Mojito",
+      "price": 11.99,
+      "size": "6 pack, 355",
+      "alc": 5,
+      "description": "A refreshing and minty rum cooler that is perfect for sipping on a warm day.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/palmBayMojito.jpg"
+    },
+    {
+      "name": "Mike's Hard Peach Lemonade",
+      "price": 10.99,
+      "size": "6 pack, 355",
+      "alc": 2,
+      "description": "A sweet and tangy peach and lemonade-flavored malt beverage that is perfect for picnics and barbecues.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/mikesHardPeachLemonade.jpg"
+    },
+    {
+      "name": "Twisted Tea Raspberry",
+      "price": 9.99,
+      "size": "6 pack, 355",
+      "alc": 7.1,
+      "description": "A sweet and fruity raspberry-flavored blend of tea and lemonade that is perfect for a summer day.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/twistedTeaRaspberry.jpg"
+    },
+    {
+      "name": "Bacardi Breezer Orange",
+      "price": 10.99,
+      "size": "4 pack, 275",
+      "alc": 5.5,
+      "description": "A sweet and tangy orange-flavored rum cooler that is perfect for a day at the beach.",
+      "quantity": 100,
+      "howMany": 1,
+      "image": "/images/alc_database/bacardiBreezerOrange.jpg"
+    }
+  ]
 }
-  
+

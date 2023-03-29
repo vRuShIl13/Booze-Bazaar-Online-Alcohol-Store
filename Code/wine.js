@@ -6,7 +6,7 @@ let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 fetch('/Code/database.json')
   .then(response => response.json())
   .then(data => {
-    let items = data.whiskey;
+    let items = data.wine;
     renderItems(items);
 
     const sortSelect = document.querySelector('.sort-select');
@@ -18,7 +18,7 @@ fetch('/Code/database.json')
 
     function renderItems(items) {
       contain.innerHTML = '';
-      data.whiskey.forEach(item => {
+      data.wine.forEach(item => {
 
         const card = document.createElement('div');
         card.classList.add('card', 'mb-3');
@@ -56,6 +56,7 @@ fetch('/Code/database.json')
 
       });
     }
+
     function sortItems(items, sortOption) {
       switch (sortOption) {
         case 'price-asc':
@@ -81,6 +82,8 @@ fetch('/Code/database.json')
 
   })
   .catch(error => console.error(error));
+
+
 
 
 function addToFavorites(item) {

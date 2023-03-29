@@ -1,129 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-        crossorigin="anonymous"
-    >
-    
-    <link rel="stylesheet" href="style.css">
-    <title>Booze Bazaar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Booze Bazaar</title>
 </head>
 
 
 <body>
 
-  <img src="/images/bg1.jpg" alt="background" class = backGr>
+  <img src="/images/bg1.jpg" alt="background" class=backGr>
   <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark " >
-          <div class="container-fluid">
-            <a class="navbar-brand col-3" href="index.html">
-              <div class = "logo1">
-                <video autoplay loop muted playsinline>
-                  <source src="/images/logoA.mp4" type="video/mp4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand col-3" href="index.html">
+          <div class="logo1">
+            <video autoplay loop muted playsinline>
+              <source src="/images/logoA.mp4" type="video/mp4">
 
-                </video>
-          
-              </div>
-            </a>
-            
-            <form class="d-flex col-6" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success col-2" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" >
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-              </button>
-            </form>
+            </video>
 
-            <button class="navbar-toggler " type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-lg-0">
-                <li class="nav-item  ">
-                  <a class="nav-link active " aria-current="page" href="/Code/fav.html">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                    
-                  </a>
-                </li>
-                
-                <li class="nav-item ">
-
-                  <a class="nav-link active " aria-current="page" href="/Code/cart.html">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
-                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </svg>
-                    
-                  </a>
-                </li>
-                    
-                  </a>
-                </li>
-        
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="Black" class="bi bi-person-circle" viewBox="0 0 16 16">
-                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                  </a>
-                  <ul class="dropdown-menu" >
-                    
-                    <li><a class="dropdown-item" href="#">Track Order</a></li>
-                    <li><a class="dropdown-item" href="#">Order</a></li>
-                    <li><a class="dropdown-item" href="#">User Information</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Log out</a></li>
-                  </ul>
-                </li>
-                
-              </ul>
-            </div>
           </div>
-        </nav>
+        </a>
+
+        <form class="d-flex col-6"  onsubmit="search(event)" role="search">
+          <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success col-2" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </form>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item  ">
+              <a class="nav-link active " aria-current="page" href="/Code/fav.html">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+
+              </a>
+            </li>
+
+            <li class="nav-item ">
+
+              <a class="nav-link active " aria-current="page" href="/Code/cart.html">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+
+              </a>
+            </li>
+
+            </a>
+            </li>
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="Black" class="bi bi-person-circle"
+                  viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+
+                <li><a class="dropdown-item" href="#">Track Order</a></li>
+                <li><a class="dropdown-item" href="#">Order</a></li>
+                <li><a class="dropdown-item" href="#">User Information</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
     <div class="carousel-inner ">
       <div class="carousel-item active  ">
         <a href="">
-        <img src="/carouselImages/c1.jpg" class="d-block w-75 mx-auto" alt="...">
+          <img src="/carouselImages/c1.jpg" class="d-block w-75 mx-auto" alt="...">
         </a>
       </div>
       <div class="carousel-item">
         <a href="">
-        <img src="/carouselImages/c2.jpg" class="d-block w-75 mx-auto" alt="...">
+          <img src="/carouselImages/c2.jpg" class="d-block w-75 mx-auto" alt="...">
         </a>
       </div>
       <div class="carousel-item">
         <a href="">
-        <img src="/carouselImages/c3.jpg" class="d-block w-75 mx-auto" alt="...">
+          <img src="/carouselImages/c3.jpg" class="d-block w-75 mx-auto" alt="...">
         </a>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -132,112 +137,99 @@
 
 
 
-    <div class="row row-cols-1 row-cols-md-3 g-2 mt-3">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/beer.jpg " class="card-img-top" alt="...">
-          <div class="card-body" >
-            <p class="card-text">Bold, crisp, refreshing brews</p>
-            <a href="beerPage.html" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none; " >
-              Beer
-            </a>
-          </div>
+  <div class="row row-cols-1 row-cols-md-3 g-2 mt-3">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/beer.jpg " class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Bold, crisp, refreshing brews</p>
+          <a href="beerPage.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none; ">
+            Beer
+          </a>
         </div>
       </div>
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/cooler.jpg" class="card-img-top" alt="...">
-          
-          <div class="card-body" >
-            <p class="card-text">Fruity, fizzy, and fun mixed drinks</p>
-            <a href="#" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;" >
-              Coolers
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/rum.jpg" class="card-img-top" alt="...">
-          <div class="card-body" >
-            <p class="card-text">Sweet, tropical, and spicy libations</p>
-            <a href="#" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;" >
-              Rum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col" style="margin-top: 200px;">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/vodka.jpg" class="card-img-top" alt="...">
-          <div class="card-body" >
-            <p class="card-text">Smooth, pure, and versatile spirits</p>
-            <a href="#" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;" >
-              Vodka
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col" style="margin-top: 200px;">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/whiskey.jpg" class="card-img-top" alt="...">
-          <div class="card-body" >
-            <p class="card-text">Smooth and smoky sips.</p>
-            <a href="whiskeyP.html" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 19px; margin-top: 5px; border: none; " >
-              Whiskey
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col" style="margin-top: 200px;">
-        <div class="card" style="width: 18rem;">
-          <img src="/cards/wine.jpg" class="card-img-top" alt="...">
-          <div class="card-body" >
-            <p class="card-text">Rich, complex, and flavorful blends</p>
-            <a href="#" class="btn btn-primary"   
-              style="background-color: rgba(0,0,0,0.9); font-size: 20px; border: none;" >
-              Wine
-            </a>
-          </div>
-        </div>
-      </div>
-      
     </div>
 
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/cooler.jpg" class="card-img-top" alt="...">
 
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
-        crossorigin="anonymous">
+        <div class="card-body">
+          <p class="card-text">Fruity, fizzy, and fun mixed drinks</p>
+          <a href="coolers.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
+            Coolers
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/rum.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Sweet, tropical, and spicy libations</p>
+          <a href="rum.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
+            Rum
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" style="margin-top: 200px;">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/vodka.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Smooth, pure, and versatile spirits</p>
+          <a href="vodka.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 20px; margin-top: 5px; border: none;">
+            Vodka
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" style="margin-top: 200px;">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/whiskey.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Smooth and smoky sips.</p>
+          <a href="whiskeyP.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 19px; margin-top: 5px; border: none; ">
+            Whiskey
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" style="margin-top: 200px;">
+      <div class="card" style="width: 18rem;">
+        <img src="/cards/wine.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Rich, complex, and flavorful blends</p>
+          <a href="wine.html" class="btn btn-primary"
+            style="background-color: rgba(0,0,0,0.9); font-size: 20px; border: none;">
+            Wine
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="search.js"></script>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" 
-        crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
     </script>
 
 
 </body>
+
 </html>
-
-
-
-<!-- 
-<li class="nav-item">
-  <a class="nav-link disabled">Disabled</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="#">
-    link
-  </a>
-</li> -->

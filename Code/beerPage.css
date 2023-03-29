@@ -1,29 +1,29 @@
+.row {
 
-.row{
-    
     align-self: center;
     width: 800px;
 
 }
 
-.card-bod{
+.card-bod {
 
     height: 260px;
-    
-    background-color:rgb(242, 235, 235);
+
+    background-color: rgb(242, 235, 235);
     color: black;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 14px;
 }
+
 .card img {
- 
+
     height: 260px;
     width: 350px;
 }
 
-.beer-name{
+.beer-name {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bolder;
@@ -38,24 +38,25 @@
     font-size: 16px;
 }
 
-p{
+p {
     margin-top: 1;
     margin-bottom: 0;
 }
-.buttons{
+
+.buttons {
     margin-top: 20px;
-    display:flex;
-    
-    flex-direction:row;
-    align-items:center;
-    
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
     justify-content: space-around;
     width: 100%;
 }
 
 button:active {
     box-shadow: 0px 0px 5px rgba(0, 0, 200, 1);
-  }
+}
 
 .btn-sm {
     padding: 0.15rem 0.2rem;
@@ -64,12 +65,11 @@ button:active {
 
 
 
-.bili{
-    margin-top: 5px;
-    margin-left: 50px;
+.bili {
+    margin-left: -10px;
 }
 
-.bili:hover{
+.bili:hover {
 
     background-color: black;
 }

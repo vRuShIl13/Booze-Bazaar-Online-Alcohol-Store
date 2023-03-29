@@ -6,7 +6,7 @@ let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 fetch('/Code/database.json')
   .then(response => response.json())
   .then(data => {
-    let items = data.whiskey;
+    let items = data.coolers;
     renderItems(items);
 
     const sortSelect = document.querySelector('.sort-select');
@@ -18,7 +18,8 @@ fetch('/Code/database.json')
 
     function renderItems(items) {
       contain.innerHTML = '';
-      data.whiskey.forEach(item => {
+
+      data.coolers.forEach(item => {
 
         const card = document.createElement('div');
         card.classList.add('card', 'mb-3');

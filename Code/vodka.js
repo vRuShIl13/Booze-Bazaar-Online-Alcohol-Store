@@ -6,7 +6,7 @@ let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 fetch('/Code/database.json')
   .then(response => response.json())
   .then(data => {
-    let items = data.whiskey;
+    let items = data.vodka;
     renderItems(items);
 
     const sortSelect = document.querySelector('.sort-select');
@@ -18,8 +18,7 @@ fetch('/Code/database.json')
 
     function renderItems(items) {
       contain.innerHTML = '';
-      data.whiskey.forEach(item => {
-
+      data.vodka.forEach(item => {
         const card = document.createElement('div');
         card.classList.add('card', 'mb-3');
         card.style.maxWidth = '540px';
@@ -44,7 +43,7 @@ fetch('/Code/database.json')
             </div>
           </div>
         </div>
-      `
+      `;
 
         contain.appendChild(card);
 
@@ -56,6 +55,7 @@ fetch('/Code/database.json')
 
       });
     }
+
     function sortItems(items, sortOption) {
       switch (sortOption) {
         case 'price-asc':
@@ -116,6 +116,8 @@ function addToCart(item) {
   console.log(cartItems);
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
+
+
 
 
 
