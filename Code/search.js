@@ -81,8 +81,21 @@ function searchItems(searchTerm) {
           }
         });
       }
-      renderItems(matchingItems);
 
+      if(matchingItems.size === 0){
+        console.log("EDFASF");
+        const card = document.createElement('div');
+        card.classList.add('card', 'mb-3');
+        card.style.maxWidth = '540px';
+        card.innerHTML = `
+          <div class="handy">
+            <h1>Nothing to show here, SORRY</h1>
+          </div>
+        `
+    
+      }else{
+        renderItems(matchingItems);
+      }
       const sortSelect = document.querySelector('.sort-select');
       sortSelect.addEventListener('change', (event) => {
         const sortOption = event.target.value;

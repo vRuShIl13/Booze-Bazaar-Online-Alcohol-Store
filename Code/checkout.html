@@ -108,19 +108,19 @@
   <h1 class="check">Checkout</h1>
   <form id="checkout-form">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br>
+    <input type="text" id="name" name="name" placeholder="Enter Name" required><br>
 
     <label for="address">Address:</label>
-    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+    <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter Address" required></textarea><br>
 
     <label for="card-number">Card Number:</label>
-    <input type="text" id="card-number" name="card-number" required><br>
+    <input type="text" id="card-number" name="card-number"  min="0" placeholder="Enter xxxx-xxxx-xxxx-xxxx"required><br>
 
     <label for="card-expiry">Expiry Date:</label>
-    <input type="text" id="card-expiry" name="card-expiry" required><br>
+    <input type="text" id="card-expiry" name="card-expiry"  min="0" placeholder="Expiry xx-xx-xxxx" required><br>
 
     <label for="card-cvv">CVV:</label>
-    <input type="text" id="card-cvv" name="card-cvv" required><br>
+    <input type="number" id="card-cvv" name="card-cvv" min="0" placeholder="Enter CVV xxx"required><br>
 
     <input type="submit" value="Place Order">
   </form>
@@ -129,7 +129,6 @@
     <h1>Sub Total: ${{subTotal}}</h1>
     <h2>Total: ${{total}}</h2>
   </div>
-
 
   <script src="checkout.js"></script>
   <script src="index.js"></script>

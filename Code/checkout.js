@@ -2,11 +2,12 @@ const urlParams = new URLSearchParams(window.location.search);
 const total = urlParams.get('total');
 document.querySelector('.total h2:nth-child(2)').innerText = `Total: $${total}`;
 
-
+console.log(total);
 
 document.getElementById("checkout-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    window.location.href = "orderConfirmation.html?total=${total}"; 
+    window.location.href=`orderConfirmation.html?total=${total}`;
+
  });
 
 

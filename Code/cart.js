@@ -66,7 +66,8 @@ function showItems(cart){
   container.insertAdjacentHTML("beforeend", `
     <div class="total">
     <h2>Sub Total: $ ${total}</h2>
-      <button type="button" class = "bbt" onclick="window.location.href='checkout.html?total=${total}'">Proceed to Checkout</button>
+      <button type="button" class = "bbt" onclick="window.location.href='checkout.html?total=${total}'  
+      ">Proceed to Checkout</button>
       
     </div>
   `);
